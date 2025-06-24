@@ -610,3 +610,14 @@ body.dark .delete-btn:hover {
   display: block;
 }
 
+@media (max-width: 500px) {
+  .controls-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .add-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
