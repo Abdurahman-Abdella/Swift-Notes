@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
           <h3 class="note-title">${note.title}</h3>
           <p class="note-text">${note.content}</p>
           <div class="note-footer">
-            <span class="note-tag ${getTagClass(note.tag)}">${getTagName(note.tag)}</span>
+            <span class="note-tag ${getTagClass(note.tag)}">
+              ${getTagIcon(note.tag)} ${getTagName(note.tag)}
+            </span>
             <span class="note-date">${formatDate(note.date)}</span>
             <button class="delete-btn" data-id="${index}"><i class="fas fa-trash"></i></button>
           </div>
@@ -62,6 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
       ideas: "Ideas",
       reminders: "Reminder"
     }[tag] || "";
+  }
+
+  function getTagIcon(tag) {
+    return {
+      work: '<i class="fas fa-briefcase"></i>',
+      personal: '<i class="fas fa-user"></i>',
+      ideas: '<i class="fas fa-lightbulb"></i>',
+      reminders: '<i class="fas fa-bell"></i>'
+    }[tag] || '<i class="fas fa-tag"></i>';
   }
 
   function formatDate(dateStr) {
@@ -144,6 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   renderNotes();
 });
+
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 const body = document.body;
