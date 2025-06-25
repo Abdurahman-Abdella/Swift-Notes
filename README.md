@@ -13,7 +13,11 @@ SwiftNotes is a sleek and responsive web-based notepad application designed to h
 - 🔐 Confirmation modal before deleting a note
 
 ## 🚀 Demo
+<p align="center">
+  <img src="assets/mockup.png" alt="MindKeep Preview" width="700" style="border-radius: 12px; border: 1px solid #ddd;" />
+</p>
 
-> **Live Preview:** *Coming soon or host via GitHub Pages*
-
-![App Preview](./screenshot.png)
+<p align="center"><i><p align="center">
+  <a href="https://YOUR_NETLIFY_URL.netlify.app" target="_blank">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploy on Netlify" width="150"/>
+  </a>
