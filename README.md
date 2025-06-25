@@ -18,6 +18,6 @@ SwiftNotes is a sleek and responsive web-based notepad application designed to h
 </p>
 
 <p align="center"><i><p align="center">
-  <a href="https://YOUR_NETLIFY_URL.netlify.app" target="_blank">
+  <a href="[https://YOUR_NETLIFY_URL.netlify.app](https://swiftnotes-drip.netlify.app/)" target="_blank">
     <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploy on Netlify" width="150"/>
   </a>
